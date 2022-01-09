@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ul.pagication_display li {
+  display:inline;
+  margin: 0 0.5rem;
+  height: 2rem;
+  width: 2rem;
+  background: #111;
+  color: #fff;
+  padding: 0.3rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+ul.pagication_display li.active {
+  cursor:not-allowed;
+  color: blue;
+  font-weight: bold;
+}
+
+
+/* to do app css */
+.task-list ul{
+  list-style:none;
+}
+.task-list li{
+  background-color: rgb(33,37,41);
+  margin-bottom: 10px;
+  text-align: start;
+  margin-right: 20px;
+  border-radius: 4px;
+}
+.task-list button.btn-danger{
+  margin-left: 1rem;
+  
+}
+.title{
+  padding-left: 10px;
+  color: #ddd;
+  font-size: 35px;
+  font-size: bold;
+  text-transform: capitalize;
+}
+.desc{
+  padding-left: 15px;
+  color:#ccc;
+  opacity: 0.8;
+  padding-bottom: 5px;
+}
+
+.update-input{
+  padding-top: 16px;
+  padding-right: 16px;
+}
+
+.home-title a{
+  color: #111;
+  font-size: 4rem;
+  text-decoration: none;
+}
