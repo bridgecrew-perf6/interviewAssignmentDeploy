@@ -15,11 +15,11 @@ code {
 ul.pagication_display li {
   display:inline;
   margin: 0 0.5rem;
-  height: 2rem;
-  width: 2rem;
+  height: 5rem;
+  width: 5rem;
   background: #111;
   color: #fff;
-  padding: 0.3rem;
+  padding: 0.5rem;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -28,6 +28,19 @@ ul.pagication_display li.active {
   cursor:not-allowed;
   color: blue;
   font-weight: bold;
+  color:rgb(33,37,41);
+  background-color:#aaa;
+}
+.custom-pagination{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+#searchInput{
+  width: 25%!important;
+  margin: 1rem 2rem;
 }
 
 
@@ -70,3 +83,33 @@ ul.pagication_display li.active {
   font-size: 4rem;
   text-decoration: none;
 }
+
+@media only screen and (min-width: 600px) {
+  .search_sort_section{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    color: rgb(33,37,41);
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .search_sort_section{
+    display: block;
+
+    color: rgb(33,37,41);
+  }
+  .search_sort_section #searchInput{
+    width: 80%!important;
+  }
+  .search_sort_section .btn{
+    display: block;
+    width: 100%;
+    margin-bottom: 0.2rem;
+  }
+}
+
+main{
+  min-height: 80vh;
+}
+

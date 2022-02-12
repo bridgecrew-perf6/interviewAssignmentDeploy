@@ -14,12 +14,9 @@ const Header = ()=>{
                     <LinkContainer to='/'>
                         <Nav.Link>Home</Nav.Link>
                     </LinkContainer>
-                    <LinkContainer to='/question1/todo'>
+                    {/* <LinkContainer to='/question1/todo'>
                         <Nav.Link >Q1 (To Do App)</Nav.Link>
-                    </LinkContainer>
-                    <LinkContainer to="/question2/users">
-                        <Nav.Link >Q2 (Fetch Users)</Nav.Link>
-                    </LinkContainer>
+                    </LinkContainer> */}
                 </Nav>
                 </Navbar.Collapse>
             </Container>

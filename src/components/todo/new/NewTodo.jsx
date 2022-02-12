@@ -17,16 +17,10 @@ const NewTodo=({addEvent})=>{
     }
     const disable=!todo.trim()?true:'';
     return <Container>
-        <Row>
-            <Col sm={12} md={4} className='mx-auto' >
-                <form onSubmit={newTodoHandler}>
-                <div >Add New Task</div>
-                    <Form.Control type="text" id="todo" value={todo} placeholder="Enter Task" onChange={(e)=>setTodo(e.target.value)} autoComplete="off" />
-                    <Button type='submit'  className='btn-dark btm-block mt-2' style={{width:'100%'}} disabled={disable} >Add</Button>    
-                </form>
-            </Col>
-        </Row>
-        
+        <form onSubmit={newTodoHandler}>
+            <Form.Control type="text" id="todo" value={todo} placeholder="Enter Task" onChange={(e)=>setTodo(e.target.value)} autoComplete="off" />
+            <Button type='submit'  className='btn-dark btm-block mt-2' style={{width:'100%'}} disabled={disable} >Add</Button>    
+        </form>
     </Container>
 }
 export default NewTodo;
